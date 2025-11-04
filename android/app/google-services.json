@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "335875494011",
+    "project_id": "plan-all-the-way",
+    "storage_bucket": "plan-all-the-way.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335875494011:android:eb0d29eac84e2ad7cf12de",
+        "android_client_info": {
+          "package_name": "com.example.plan_all_the_way"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnTQ2yimGqCPPWRNmRKN5FIzij-i7EPi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
