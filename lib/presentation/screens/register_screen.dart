@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:plan_all_the_way/presentation/screens/home_screen.dart';
+import 'package:go_router/go_router.dart';
 import '../blocs/auth_bloc.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -22,10 +22,7 @@ class _RegisterPageState extends State<RegisterPage> {
       body: BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
           if (state is AuthAuthenticated) {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (_) => const HomePage()),
-            );
+            context.go('/add');
           }
           if (state is AuthError) {
             ScaffoldMessenger.of(

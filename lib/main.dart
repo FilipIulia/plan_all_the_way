@@ -9,7 +9,7 @@ import 'package:plan_all_the_way/domain/use_cases/sign_out.dart';
 import 'package:plan_all_the_way/domain/use_cases/sign_up_with_email.dart';
 import 'package:plan_all_the_way/firebase_options.dart';
 import 'package:plan_all_the_way/presentation/blocs/auth_bloc.dart';
-import 'package:plan_all_the_way/presentation/screens/login_screen.dart';
+import 'package:plan_all_the_way/presentation/router/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -39,14 +39,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Plan All The Way',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SafeArea(child: const LoginPage()),
+      routerConfig: AppRouter.router,
     );
   }
 }

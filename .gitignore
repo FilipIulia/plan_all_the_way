@@ -1,16 +1,23 @@
 # Miscellaneous
+*.env
 *.class
 *.log
 *.pyc
 *.swp
 .DS_Store
 .atom/
-.build/
 .buildlog/
 .history
 .svn/
-.swiftpm/
+.fvm/
+build/
 migrate_working_dir/
+Gemfile.lock
+.env
+*.dSYM.zip
+.crashlytics/
+artifacts/
+android.kotlin.sessions/kotlin-compiler-*.salive
 
 # IntelliJ related
 *.iml
@@ -18,10 +25,9 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+
+# VS Code related
+.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -29,9 +35,14 @@ migrate_working_dir/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
 /build/
+pubspec.lock
+
+# Localization
+packages/shared/lib/generated/l10n/
 
 # Symbolication related
 app.*.symbols
@@ -43,3 +54,41 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/app/.cxx
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+ObjectiveC.gcda
+*.xcscmblue
+node_modules/
+
+# CocoaPods
+Pods
+
+# Fastlane
+fastlane/README.md
+fastlane/report.xml
+
+.scannerwork
+launch.json
+/.mason/bricks.json
+/mason-lock.json
+android/app/.cxx/*
+
+# Config
+/packages/shared/assets/debug_logger_config.yaml
+
